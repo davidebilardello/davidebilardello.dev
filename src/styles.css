@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -9999;
+}
+
+@font-face {
+  font-family: 'QuicksandRegular';
+  src: url('../public/font/Quicksand-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QuicksandLight';
+  src: url('../public/font/Quicksand-Light.ttf') format('truetype');
+  font-weight: 250;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QuicksandMedium';
+  src: url('../public/font/Quicksand-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QuicksandBold';
+  src: url('../public/font/Quicksand-Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'QuicksandSemibold';
+  src: url('../public/font/Quicksand-SemiBold.ttf') format('truetype');
+  font-weight: 1000;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+.text-stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #666FBF;
+}
