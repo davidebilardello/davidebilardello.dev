@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Scenes} from "../class/Scenes";
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -10,7 +9,7 @@ export class CanvaService {
   canva!: Scenes
 
   static defaultColor = [0.1, 0.2, 0.3]
-  static secondColor = [0.01, 0.9, 0.5]
+  static secondColor = [0.01, 0.9, 0.4]
   static thirdColor = [0.9, 0.5, 0.01]
 
   constructor() {
@@ -36,7 +35,6 @@ export class CanvaService {
     this.canva.updateElement()
 
   }
-
 
   setFrequency(frequency: number) {
 

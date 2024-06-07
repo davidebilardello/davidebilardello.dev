@@ -1,11 +1,11 @@
-<div class="flex flex-row gap-2">
+<div class="flex flex-col tablet:flex-row gap-2">
   @defer () {
     <img class="w-[150px] h-fit border border-secondaryDark rounded" ngSrc="{{img}}" width="{{imgW}}"
          height="{{imgH}}"
          alt="">
   }
   <div class="flex flex-col gap-2 flex-grow">
-    <app-typography cssClasses="text-white" [fontText]="TextFont.QuicksandBold"
+    <app-typography cssClasses="text-white break-all" [fontText]="TextFont.QuicksandBold"
                     [typeText]="TextType.h5">{{ title }}
     </app-typography>
     <app-typography cssClasses="text-white" [fontText]="TextFont.QuicksandRegular"
@@ -13,7 +13,7 @@
     </app-typography>
     <div class="flex flex-row gap-2">
       @for (tag of tags; track tag) {
-        <div class="bg-secondaryDark rounded-full">
+        <div class="bg-secondaryDark rounded-full h-fit flex text-center">
           <app-typography cssClasses="text-secondary py-2 px-3" [fontText]="TextFont.QuicksandMedium"
                           [typeText]="TextType.p">{{ tag }}
           </app-typography>
@@ -22,10 +22,10 @@
     </div>
   </div>
   @if (github !== '' || website !== '' || document !== '') {
-    <div class="w-[2px] h-auto bg-secondary rounded flex-shrink-0">
+    <div class="h-0 w-auto tablet:w-[2px] tablet:h-auto bg-secondary rounded flex-shrink-0">
     </div>
   }
-  <div class="flex flex-col gap-5 items-center">
+  <div class="flex gap-5 items-center flex-row tablet:flex-col">
     @if (website !== '') {
       <a [href]="website" target="_blank">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

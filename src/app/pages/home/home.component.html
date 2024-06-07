@@ -12,7 +12,7 @@
                   [typeText]="TextType.h2">I’m a junior software engineer and front-end developer
   </app-typography>
 </div>
-<div class="mt-[250px]  flex justify-evenly items-center">
+<div class="mt-[80px] tablet:mt-[250px] flex justify-evenly items-center">
   <div class="group transition duration-300 cursor-pointer">
     <app-typography (click)="scrollToElement('projects-title')" cssClasses="text-white"
                     [fontText]="TextFont.QuicksandRegular"
@@ -29,7 +29,7 @@
   </div>
 </div>
 <div class="flex flex-col items-end p-5 mt-[600px]">
-  <div class="w-[50%]">
+  <div class=" tablet:w-[600px] laptop:w-[50%]">
     <app-typography cssClasses="text-secondary text-center mb-10 title" [fontText]="TextFont.QuicksandBold"
                     [typeText]="TextType.h2" id="projects-title">My Projects
     </app-typography>
@@ -83,8 +83,8 @@ a unique Minecraft experience."
     </div>
   </div>
 </div>
-<div class="mt-96 flex flex-col items-start p-5 mb-40">
-  <div class="w-[800px] px-20">
+<div class="mt-96 flex flex-col items-center laptop:items-start p-5 mb-40">
+  <div class="laptop:w-[600px] laptopL:w-[800px] px-5 tablet:px-20">
     <app-typography id="aboutme" cssClasses="text-third text-center mb-10 aboutme "
                     [fontText]="TextFont.QuicksandBold"
                     [typeText]="TextType.h2">About me
@@ -111,7 +111,7 @@ a unique Minecraft experience."
     <div class="h-[2px] bg-third">
     </div>
     <div class="mt-5 flex flex-row gap-4 items-center text-third">
-      <a class="bg-thirdDark rounded-full w-fit border border-bg hover:border-third cursor-pointer"
+      <a class="bg-thirdDark rounded-full w-fit border border-transparent hover:border-third cursor-pointer"
          href="docs/Davide Bilardello - CV.pdf" target="_blank">
         <app-typography cssClasses="text-third py-2 px-3" [fontText]="TextFont.QuicksandMedium"
                         [typeText]="TextType.p">My resume
