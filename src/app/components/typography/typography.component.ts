@@ -3,14 +3,13 @@ import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {TextFont, TextType} from "./TypographyEnums";
 
 @Component({
-  selector: 'app-typography',
-  standalone: true,
-  imports: [],
-  template: `
+    selector: 'app-typography',
+    imports: [],
+    template: `
     <div [class]="classes">
       <ng-content></ng-content>
     </div>`,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TypographyComponent implements OnInit {
   @Input()

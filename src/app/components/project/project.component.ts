@@ -4,14 +4,13 @@ import {NgOptimizedImage} from "@angular/common";
 import {TypographyComponent} from "../typography/typography.component";
 
 @Component({
-  selector: 'app-project',
-  standalone: true,
-  imports: [
-    NgOptimizedImage,
-    TypographyComponent
-  ],
-  templateUrl: './project.component.html',
-  styleUrl: './project.component.css'
+    selector: 'app-project',
+    imports: [
+        NgOptimizedImage,
+        TypographyComponent
+    ],
+    templateUrl: './project.component.html',
+    styleUrl: './project.component.css'
 })
 export class ProjectComponent {
 

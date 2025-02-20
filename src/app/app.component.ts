@@ -1,6 +1,5 @@
 import {afterNextRender, Component, NgZone} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
-import {TypographyComponent} from "./components/typography/typography.component";
 import {CanvaService} from "./service/canva.service";
 import {gsap} from "gsap";
 
@@ -8,8 +7,7 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, TypographyComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
