@@ -34,6 +34,28 @@
                     [typeText]="TextType.h2" id="projects-title">My Projects
     </app-typography>
     <div class="flex flex-col gap-20">
+      <app-project title="VMART - AI"
+                   description="Rethinking Art Gallery Experience through Painting Detection, Classification, Retrieval and VR."
+                   [tags]="['PyTorch', 'Unity', 'Resnet','Computer Vision']"
+                   img="imgs/VMART.webp" [imgW]="1128"
+                   [imgH]="802"
+                   website="https://github.com/cvcs-vmart/vmart"
+                   document="vmart/paper.pdf"
+      ></app-project>
+      <app-project title="ParkSense - UX Design"
+                   description="The UI/UX design study for the app ParkSense."
+                   [tags]="['Figma', 'Design Thinking']"
+                   img="imgs/parksense.webp" [imgW]="840"
+                   [imgH]="580"
+                   website="https://github.com/EscanorTargaryen/ParkSense-Design"
+      ></app-project>
+      <app-project title="rust-cc"
+                   description="A multithread garbage cycle colletor for Rust."
+                   [tags]="['Rust', 'Concurrency']"
+                   img="imgs/rust-cc.png" [imgW]="960"
+                   [imgH]="540"
+                   website="https://tornei.bacrama.com/"
+      ></app-project>
       <app-project title="Bacrama Tournaments - Web APP"
                    description="A website to display tournaments for the Bacrama sport. The app includes an admin management system, bacchiatori, and tournaments."
                    [tags]="['Angular SSR', 'X6 - Graph Library']"
@@ -45,54 +67,48 @@
                    description="UltimateAdvancementGenerator is a tool to design
       graphically Minecraft advancements and then run them on Spigot with UltimateAdvancementAPI. Developed as my Bachelor's thesis."
                    [tags]="['Angular', 'Express.js','Google API']"
-                   img="imgs/generator.png" [imgW]="1916"
-                   [imgH]="1079"
+                   img="imgs/generator.webp" [imgW]="958"
+                   [imgH]="540"
                    document="docs/Bilardello - Thesis (ITA).pdf"
                    website="https://generator.devheim.space/"
       ></app-project>
-      <app-project title="DevHeim - Website"
+      <!--<app-project title="DevHeim - Website"
                    description="DevHeim is a Minecraft plugin community. Plugins and libraries for
 a unique Minecraft experience."
                    [tags]="['Angular', 'TailwindCSS']"
                    img="imgs/devheim.png" [imgW]="1915"
                    [imgH]="851"
                    website="https://devheim.space/"
-      ></app-project>
+      ></app-project> -->
       <app-project title="JEIOM23 - Website"
                    description="Website for Junior Enterprise Italy October Meeting."
                    [tags]="['Next.js']"
-                   img="imgs/jeiom.png" [imgW]="1898"
-                   [imgH]="886"
+                   img="imgs/jeiom.webp" [imgW]="949"
+                   [imgH]="443"
                    website="https://jeiom23.escanortargaryen.dev/"
       ></app-project>
       <app-project title="Davide Bilardello - Website"
                    description="Personal website of Davide Bilardello."
                    [tags]="['Angular', 'GSAP', 'Three.js']"
-                   img="imgs/bilardello.png" [imgW]="1916"
-                   [imgH]="1079"
+                   img="imgs/bilardello.webp" [imgW]="948"
+                   [imgH]="453"
                    website="https://escanortargaryen.dev/"
                    github="https://github.com/EscanorTargaryen/davidebilardello.dev"
       ></app-project>
       <app-project title="Angular App Template"
                    description="Angular base project with everything you need to start developing a new web app."
                    [tags]="['Angular', 'App', 'Full stack']"
-                   img="imgs/angular-app.webp" [imgW]="1920"
-                   [imgH]="1080"
+                   img="imgs/angular-app.webp" [imgW]="960"
+                   [imgH]="540"
                    github="https://github.com/EscanorTargaryen/angular-app-template"
       ></app-project>
       <app-project title="UltimateAdvancementAPI - Java Library"
                    description="A powerful API to create custom advancements for your Minecraft server."
                    [tags]="['Java', 'Maven']"
-                   img="imgs/API.png" [imgW]="1366"
-                   [imgH]="634"
+                   img="imgs/API.webp" [imgW]="683"
+                   [imgH]="317"
                    website="https://devheim.space/UltimateAdvancementAPI"
                    github="https://github.com/frengor/UltimateAdvancementAPI"
-      ></app-project>
-      <app-project title="JEMORE INTERNAL USE SOFTWARE - App"
-                   description=""
-                   [tags]="['Flutter', 'MySQL']"
-                   img="imgs/flutter.png" [imgW]="1906"
-                   [imgH]="895"
       ></app-project>
     </div>
   </div>
@@ -119,13 +135,13 @@ a unique Minecraft experience."
       I currently work occasionally as a <strong>web developer</strong>.<br> The experience that matured me the most was
       at <a class="underline" href="https://www.jemore.it/" target="_blank">JEMORE</a> where I
       also held the position of IT manager and applied everything I studied at university.<br>
-      Additionally, for passion I contribute and develop software for the Minecraft server, and I am one of the founders of
-      DevHeim.
+      Additionally, for passion I contribute and develop software for the Minecraft server<!--, and I am one of the founders of
+      DevHeim--> .
     </app-typography>
     <div class="h-[2px] bg-third">
     </div>
     <div class="mt-5 flex flex-row gap-4 items-center text-third">
-      <a class="bg-thirdDark rounded-full w-fit border border-transparent hover:border-third cursor-pointer"
+      <a class="bg-[#241700] rounded-full w-fit border border-transparent hover:border-third cursor-pointer"
          href="docs/Davide Bilardello - CV.pdf" target="_blank">
         <app-typography cssClasses="text-third py-2 px-3" [fontText]="TextFont.QuicksandMedium"
                         [typeText]="TextType.p">My resume

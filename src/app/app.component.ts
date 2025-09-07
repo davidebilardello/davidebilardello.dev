@@ -1,4 +1,4 @@
-import {afterNextRender, Component, NgZone} from '@angular/core';
+import {afterNextRender, Component, inject, NgZone} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {CanvaService} from "./service/canva.service";
 import {gsap} from "gsap";
@@ -13,7 +13,10 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 })
 export class AppComponent {
 
-  constructor(private canva: CanvaService, private ngZone: NgZone) {
+  canva = inject(CanvaService)
+  ngZone = inject(NgZone)
+
+  constructor() {
 
     afterNextRender(() => {
       this.ngZone.runOutsideAngular(() => {
