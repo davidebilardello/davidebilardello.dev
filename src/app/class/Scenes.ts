@@ -200,7 +200,7 @@ void main() {
 
   vec3 color = cosPalette(${hue} + distort, brightness, contrast, oscilation, phase);
 
-  gl_FragColor = vec4(color, uAlpha);
+  gl_FragColor = vec4(color, 1.0);
 }
 `
   }
