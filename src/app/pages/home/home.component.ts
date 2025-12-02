@@ -1,7 +1,8 @@
-import {Component, HostListener} from '@angular/core';
+import {Component, HostListener, inject, signal} from '@angular/core';
 import {TypographyComponent} from "../../components/typography/typography.component";
 import {TextFont, TextType} from "../../components/typography/TypographyEnums";
 import {ProjectComponent} from "../../components/project/project.component";
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,8 +15,16 @@ import {ProjectComponent} from "../../components/project/project.component";
 export class HomeComponent {
 
   window: any
+  route = inject(ActivatedRoute);
+
+  showNickName = signal(false);
 
   constructor() {
+    this.route.queryParams.subscribe(params => {
+      if (params['redirect'] === 'true') {
+        this.showNickName.set(true);
+      }
+    });
   }
 
   scrollToElement(elementId: string): void {

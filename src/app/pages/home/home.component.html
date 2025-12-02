@@ -4,9 +4,11 @@
     <span class="text-primary"> <strong>Davide Bilardello </strong>
     </span>
   </app-typography>
-  <app-typography cssClasses="text-primary mt-1" [fontText]="TextFont.QuicksandRegular"
-                  [typeText]="TextType.h5">(My nickname is EscanorTargaryen)
-  </app-typography>
+  @if(showNickName()){
+    <app-typography cssClasses="text-primary mt-1" [fontText]="TextFont.QuicksandRegular"
+                    [typeText]="TextType.h5">(My nickname is EscanorTargaryen)
+    </app-typography>
+  }
   <br>
   <app-typography cssClasses="text-primary" [fontText]="TextFont.QuicksandRegular"
                   [typeText]="TextType.h2">I’m a junior software engineer and front-end developer
