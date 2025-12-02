@@ -5,4 +5,4 @@ COPY package*.json ./
 RUN npm ci
 COPY . ./
 RUN npm run build
-CMD node ./dist/project-name/server/server.mjs
+CMD node ./dist/davidebilardello/server/server.mjs
